@@ -1,0 +1,514 @@
+INFO     2023-06-13 14:55:47 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:63169 - "GET /system/healthcheck HTTP/1.1" 200
+INFO     2023-06-13 14:56:47 request id: app - uvicorn.server:serve - Started server process [21452]
+INFO     2023-06-13 14:56:47 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-06-13 14:56:47 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-06-13 14:56:47 request id: app - uvicorn.server:_log_started_message - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO     2023-06-13 14:56:58 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-06-13 14:56:58 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-06-13 14:56:58 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-06-13 14:56:58 request id: app - uvicorn.server:serve - Finished server process [21452]
+INFO     2023-06-13 14:57:00 request id: app - uvicorn.server:serve - Started server process [25296]
+INFO     2023-06-13 14:57:00 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-06-13 14:57:00 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-06-13 14:57:00 request id: app - uvicorn.server:_log_started_message - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO     2023-06-13 15:49:31 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-06-13 15:49:32 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-06-13 15:49:32 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-06-13 15:49:32 request id: app - uvicorn.server:serve - Finished server process [25296]
+INFO     2023-06-19 09:16:02 request id: app - uvicorn.server:serve - Started server process [36996]
+INFO     2023-06-19 09:16:02 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-06-19 09:16:02 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-06-19 09:16:02 request id: app - uvicorn.server:_log_started_message - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO     2023-06-19 09:16:11 request id: app - main:read_root - logging info log!!
+INFO     2023-06-19 09:16:11 request id: None - main:read_root - make logger log!!
+ERROR    2023-06-19 09:16:11 request id: app - uvicorn.protocols.http.h11_impl:run_asgi - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+           │         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <zipimporter object "C:\Users\YunseonBae\PycharmPr...
+           │         └ <code object <module> at 0x0000025817447A80, file "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\Scripts\uvicor...
+           └ <function _run_code at 0x00000258174073A0>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <zipimporter object "C:\Users\YunseonBae\PycharmPr...
+         └ <code object <module> at 0x0000025817447A80, file "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\Scripts\uvicor...
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\Scripts\uvicorn.exe\__main__.py", line 7, in <module>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function BaseCommand.main at 0x0000025819306790>
+           └ <Command main>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 1055, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025819335F70>
+         │    └ <function Command.invoke at 0x0000025819309280>
+         └ <Command main>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'app': 'main:app', 'host': '127.0.0.1', 'port': 8000, 'uds': None, 'fd': None, 'reload': False, 'reload_dirs': (), 'reload_i...
+           │   │      │    │           └ <click.core.Context object at 0x0000025819335F70>
+           │   │      │    └ <function main at 0x00000258194068B0>
+           │   │      └ <Command main>
+           │   └ <function Context.invoke at 0x0000025819306040>
+           └ <click.core.Context object at 0x0000025819335F70>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+                       │       └ {'app': 'main:app', 'host': '127.0.0.1', 'port': 8000, 'uds': None, 'fd': None, 'reload': False, 'reload_dirs': (), 'reload_i...
+                       └ ()
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\main.py", line 410, in main
+    run(
+    └ <function run at 0x0000025819345C10>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\main.py", line 578, in run
+    server.run()
+    │      └ <function Server.run at 0x00000258193A9160>
+    └ <uvicorn.server.Server object at 0x0000025819403B80>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x00000258193A91F0>
+           │       │   └ <uvicorn.server.Server object at 0x0000025819403B80>
+           │       └ <function run at 0x00000258190698B0>
+           └ <module 'asyncio' from 'C:\\Users\\YunseonBae\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x00000258193704C0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000025819065B80>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000025819147670>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000025819069670>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000025818FF9940>
+    └ <Handle <TaskWakeupMethWrapper object at 0x000002581B96AD60>(<Future finis...thorization')>)>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x000002581B96AD60>(<Future finis...thorization')>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x000002581B96AD60>(<Future finis...thorization')>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x000002581B96AD60>(<Future finis...thorization')>)>
+
+> File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000258194180A0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935340>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000025819481EB0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000258194180A0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935340>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935340>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000002581B90BC40>
+          └ <fastapi.applications.FastAPI object at 0x0000025819481EB0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x000002581B927280>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002581B90BC10>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000002581B90BC40>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581B9273A0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x000002581B90BBB0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002581B90BC10>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581B9273A0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x000002581B89BF70>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x000002581B90BBB0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581B9273A0>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x0000025819E27820>
+          └ APIRoute(path='/', name='read_root', methods=['GET'])
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581B9273A0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581B935...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x000002581B8F68B0>
+          └ APIRoute(path='/', name='read_root', methods=['GET'])
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x000002581B928C40>
+                     └ <function get_request_handler.<locals>.app at 0x000002581B8F6A60>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x0000025819E114C0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+                 │                 │         │       └ {'request': <starlette.requests.Request object at 0x000002581B928C40>}
+                 │                 │         └ <function read_root at 0x000002581B8F6B80>
+                 │                 └ <fastapi.dependencies.models.Dependant object at 0x000002581B90B3A0>
+                 └ <function run_in_threadpool at 0x0000025819C0B700>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+                 │     │         │        │      └ ()
+                 │     │         │        └ functools.partial(<function read_root at 0x000002581B8F6B80>, request=<starlette.requests.Request object at 0x000002581B928C40>)
+                 │     │         └ <function run_sync at 0x0000025819C225E0>
+                 │     └ <module 'anyio.to_thread' from 'C:\\Users\\YunseonBae\\PycharmProjects\\fastApiSampleCode1\\venv\\lib\\site-packages\\anyio\\...
+                 └ <module 'anyio' from 'C:\\Users\\YunseonBae\\PycharmProjects\\fastApiSampleCode1\\venv\\lib\\site-packages\\anyio\\__init__.py'>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+                 └ <function get_asynclib at 0x0000025819C22040>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+                 └ <Future finished exception=KeyError('authorization')>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<function read_root at 0x000002581B8F6B80>, request=<starlette.requests.Request object at 0x000002581B928C40>)
+             │       └ <method 'run' of 'Context' objects>
+             └ <Context object at 0x000002581B91B600>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastapi-sample-code\main.py", line 43, in read_root
+    print("request value : ", request.headers['authorization'])
+                              │       └ <property object at 0x0000025819DB7EA0>
+                              └ <starlette.requests.Request object at 0x000002581B928C40>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\datastructures.py", line 568, in __getitem__
+    raise KeyError(key)
+                   └ 'authorization'
+
+KeyError: 'authorization'
+ERROR    2023-06-19 09:18:16 request id: app - uvicorn.protocols.http.h11_impl:run_asgi - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\jose\jws.py", line 262, in _verify_signature
+    raise JWSSignatureError()
+          └ <class 'jose.exceptions.JWSSignatureError'>
+
+jose.exceptions.JWSSignatureError
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\jose\jwt.py", line 142, in decode
+    payload = jws.verify(token, key, algorithms, verify=verify_signature)
+              │   │      │      │    │                  └ True
+              │   │      │      │    └ ['HS256']
+              │   │      │      └ 'KlgH6AzYDeZeGwD288to79I3vTHT8wp7'
+              │   │      └ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlkIjoxNCwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTY4NzEzNzQ2M30...
+              │   └ <function verify at 0x000002581B7DBC10>
+              └ <module 'jose.jws' from 'C:\\Users\\YunseonBae\\PycharmProjects\\fastApiSampleCode1\\venv\\lib\\site-packages\\jose\\jws.py'>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\jose\jws.py", line 73, in verify
+    _verify_signature(signing_input, header, signature, key, algorithms)
+    │                 │              │       │          │    └ ['HS256']
+    │                 │              │       │          └ 'KlgH6AzYDeZeGwD288to79I3vTHT8wp7'
+    │                 │              │       └ b'\x1d\x0f\x82\xa3\xcd\x03CC\x94B\x0c\r\xc4u`\xc7\xbb\x8c_\xa9\xc6\xb5[b\x90\x98\xab\xba\xff\xa5\x0b'
+    │                 │              └ {'alg': 'HS256', 'typ': 'JWT'}
+    │                 └ b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlkIjoxNCwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTY4NzEzNzQ2M30'
+    └ <function _verify_signature at 0x000002581B7E6B80>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\jose\jws.py", line 264, in _verify_signature
+    raise JWSError("Signature verification failed.")
+          └ <class 'jose.exceptions.JWSError'>
+
+jose.exceptions.JWSError: Signature verification failed.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+           │         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <zipimporter object "C:\Users\YunseonBae\PycharmPr...
+           │         └ <code object <module> at 0x0000025817447A80, file "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\Scripts\uvicor...
+           └ <function _run_code at 0x00000258174073A0>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <zipimporter object "C:\Users\YunseonBae\PycharmPr...
+         └ <code object <module> at 0x0000025817447A80, file "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\Scripts\uvicor...
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\Scripts\uvicorn.exe\__main__.py", line 7, in <module>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function BaseCommand.main at 0x0000025819306790>
+           └ <Command main>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 1055, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025819335F70>
+         │    └ <function Command.invoke at 0x0000025819309280>
+         └ <Command main>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'app': 'main:app', 'host': '127.0.0.1', 'port': 8000, 'uds': None, 'fd': None, 'reload': False, 'reload_dirs': (), 'reload_i...
+           │   │      │    │           └ <click.core.Context object at 0x0000025819335F70>
+           │   │      │    └ <function main at 0x00000258194068B0>
+           │   │      └ <Command main>
+           │   └ <function Context.invoke at 0x0000025819306040>
+           └ <click.core.Context object at 0x0000025819335F70>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\click\core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+                       │       └ {'app': 'main:app', 'host': '127.0.0.1', 'port': 8000, 'uds': None, 'fd': None, 'reload': False, 'reload_dirs': (), 'reload_i...
+                       └ ()
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\main.py", line 410, in main
+    run(
+    └ <function run at 0x0000025819345C10>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\main.py", line 578, in run
+    server.run()
+    │      └ <function Server.run at 0x00000258193A9160>
+    └ <uvicorn.server.Server object at 0x0000025819403B80>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x00000258193A91F0>
+           │       │   └ <uvicorn.server.Server object at 0x0000025819403B80>
+           │       └ <function run at 0x00000258190698B0>
+           └ <module 'asyncio' from 'C:\\Users\\YunseonBae\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x00000258193704C0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000025819065B80>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000025819147670>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000025819069670>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000025818FF9940>
+    └ <Handle <TaskWakeupMethWrapper object at 0x000002581BAFD940>(<Future finished result=False>)>
+
+  File "C:\Users\YunseonBae\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x000002581BAFD940>(<Future finished result=False>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x000002581BAFD940>(<Future finished result=False>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x000002581BAFD940>(<Future finished result=False>)>
+
+> File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000258194180A0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68160>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000025819481EB0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000258194180A0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68160>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68160>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000002581B90BC40>
+          └ <fastapi.applications.FastAPI object at 0x0000025819481EB0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x000002581BAF1160>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002581B90BC10>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000002581B90BC40>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581BAF10D0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x000002581B90BBB0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002581B90BC10>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581BAF10D0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x000002581B89BF70>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x000002581B90BBB0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581BAF10D0>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x0000025819E27820>
+          └ APIRoute(path='/auth/users', name='get_user_list', methods=['GET'])
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002581BAF10D0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002581BB68...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x000002581B8F64C0>
+          └ APIRoute(path='/auth/users', name='get_user_list', methods=['GET'])
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x000002581BB1B070>
+                     └ <function get_request_handler.<locals>.app at 0x000002581B8F6550>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x0000025819E114C0>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\fastapi\routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+                 │                 │         │       └ {'db': <sqlalchemy.orm.session.Session object at 0x000002581BAFB910>, 'request': <starlette.requests.Request object at 0x0000...
+                 │                 │         └ <function get_user_list at 0x000002581B839790>
+                 │                 └ <fastapi.dependencies.models.Dependant object at 0x000002581B9055B0>
+                 └ <function run_in_threadpool at 0x0000025819C0B700>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+                 │     │         │        │      └ ()
+                 │     │         │        └ functools.partial(<function get_user_list at 0x000002581B839790>, db=<sqlalchemy.orm.session.Session object at 0x000002581BAF...
+                 │     │         └ <function run_sync at 0x0000025819C225E0>
+                 │     └ <module 'anyio.to_thread' from 'C:\\Users\\YunseonBae\\PycharmProjects\\fastApiSampleCode1\\venv\\lib\\site-packages\\anyio\\...
+                 └ <module 'anyio' from 'C:\\Users\\YunseonBae\\PycharmProjects\\fastApiSampleCode1\\venv\\lib\\site-packages\\anyio\\__init__.py'>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+                 └ <function get_asynclib at 0x0000025819C22040>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+                 └ <Future finished exception=JWTError(JWSError('Signature verification failed.'))>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             │       │   │      └ (<class 'jose.exceptions.JWTError'>, JWTError(JWSError('Signature verification failed.')), None)
+             │       │   └ <bound method _GeneratorContextManager.__exit__ of <contextlib._GeneratorContextManager object at 0x000002581BB010A0>>
+             │       └ <method 'run' of 'Context' objects>
+             └ <Context object at 0x000002581B97BA80>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastapi-sample-code\routers\auth.py", line 45, in get_user_list
+    if auth_service.validation_token(request):
+       │            │                └ <starlette.requests.Request object at 0x000002581BB1B070>
+       │            └ <function validation_token at 0x000002581B8393A0>
+       └ <module 'services.auth' from 'C:\\Users\\YunseonBae\\PycharmProjects\\fastapi-sample-code\\services\\auth.py'>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastapi-sample-code\services\auth.py", line 70, in validation_token
+    payload = jwt.decode(bearer_token, SECRET_KEY, algorithms=[ALGORITHM])
+              │   │      │             │                       └ 'HS256'
+              │   │      │             └ 'KlgH6AzYDeZeGwD288to79I3vTHT8wp7'
+              │   │      └ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlkIjoxNCwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTY4NzEzNzQ2M30...
+              │   └ <function decode at 0x000002581B7E6C10>
+              └ <module 'jose.jwt' from 'C:\\Users\\YunseonBae\\PycharmProjects\\fastApiSampleCode1\\venv\\lib\\site-packages\\jose\\jwt.py'>
+
+  File "C:\Users\YunseonBae\PycharmProjects\fastApiSampleCode1\venv\lib\site-packages\jose\jwt.py", line 144, in decode
+    raise JWTError(e)
+          └ <class 'jose.exceptions.JWTError'>
+
+jose.exceptions.JWTError: Signature verification failed.
+INFO     2023-06-19 09:19:21 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-06-19 09:19:21 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-06-19 09:19:21 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-06-19 09:19:21 request id: app - uvicorn.server:serve - Finished server process [36996]
