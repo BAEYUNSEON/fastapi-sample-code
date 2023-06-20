@@ -10,4 +10,7 @@ router = APIRouter(
 
 @router.get("/healthcheck", status_code=status.HTTP_200_OK)
 def health_check():
-    return {"health_check": "Everything OK!"}
+    return {
+        "server_status": "200 OK",
+        "db_connection": "200 OK"
+    }

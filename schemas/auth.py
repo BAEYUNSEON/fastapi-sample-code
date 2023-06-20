@@ -1,5 +1,4 @@
-from typing import Optional, Union
-from fastapi import Request
+from typing import Union
 from pydantic import BaseModel
 
 
@@ -11,6 +10,7 @@ class UserIn(BaseModel):
 
 
 class UserOut(BaseModel):
+    user_id: int
     username: str
     email: str
 
@@ -18,7 +18,7 @@ class UserOut(BaseModel):
 class UserAccessToken(BaseModel):
     user_token: str
     username: str
-    expired: str
+    token_expiration: str
 
 
 class User(BaseModel):

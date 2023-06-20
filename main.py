@@ -1,6 +1,4 @@
 import logging
-import os
-
 import uvicorn
 from fastapi import FastAPI, Depends, Request
 from typing import Union
